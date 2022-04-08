@@ -34,6 +34,7 @@ import java.math.BigDecimal;
 import java.net.URL;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
@@ -64,7 +65,7 @@ public class AbstractValidationUnitTest {
     private static final Set<String> EXCLUDED_SCHEMA_FILES = new HashSet<String>();
     private static final Set<String> FUTURE_SCHEMA_FILES = new HashSet<String>();
     private static final Map<String, File> JBOSS_SCHEMAS_MAP = new HashMap<String, File>();
-    private static final Map<String, File> CURRENT_JBOSS_SCHEMAS_MAP = new HashMap<String, File>();
+    private static final Map<String, File> CURRENT_JBOSS_SCHEMAS_MAP = new LinkedHashMap<String, File>();
     private static Map<String, String> NAMESPACE_MAP = new HashMap<String, String>();
     private static Map<String, String> OUTDATED_NAMESPACES = new HashMap<>();
 
